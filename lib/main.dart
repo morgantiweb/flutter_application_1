@@ -12,11 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Welcome to Flutter',
       home: Scaffold(
+        backgroundColor: Colors.teal,
         appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+          backgroundColor: Colors.black87,
+          title: const Text('I am Rich'),
         ),
         body: const Center(
-          child: Text('ciao mondo!'),
+          child: const Image(
+              image: AssetImage(
+                  'images/test.jpg')),
         ),
       ),
     );
