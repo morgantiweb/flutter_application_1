@@ -17,15 +17,22 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black87,
           title: const Text('I am Rich'),
         ),
-        body: Column(children: const <Widget>[
-          CircleAvatar(
+        body: Column(children: <Widget>[
+          const CircleAvatar(
               radius: 50.0, backgroundImage: AssetImage('images/test.jpg')),
-          Text('Luca Morganti',
+          const Text('Luca Morganti',
               style: TextStyle(
-                fontSize: 22,
-                color: Colors.white,
-                fontWeight: FontWeight.bold
-              ))
+                  fontFamily: 'Roboto',
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold)),
+          Text('FLUTTER DEVELOPER',
+              style: TextStyle(
+                fontFamily: 'Source Sans Pro',
+                fontSize: 20,
+                color: Colors.teal.shade100,
+                letterSpacing: 2.5,
+              )),
         ]),
       ),
     );
