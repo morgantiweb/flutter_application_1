@@ -33,6 +33,34 @@ class MyApp extends StatelessWidget {
                 color: Colors.teal.shade100,
                 letterSpacing: 2.5,
               )),
+          Card(
+            color: Colors.white,
+            margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 10.0),
+            child: Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Row(
+                children: const <Widget>[
+                  Icon(Icons.phone, color: Colors.teal),
+                  SizedBox(width: 10.0),
+                  Text('+39 338 1234567', style: TextStyle(color: Colors.teal))
+                ],
+              ),
+            ),
+          ),
+          Card(
+            color: Colors.white,
+            margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 10.0),
+            child: Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Row(
+                children: const <Widget>[
+                  Icon(Icons.email, color: Colors.teal),
+                  SizedBox(width: 10.0),
+                  Text('morganti78@testemail.com', style: TextStyle(color: Colors.teal))
+                ],
+              ),
+            ),
+          ),
         ]),
       ),
     );
